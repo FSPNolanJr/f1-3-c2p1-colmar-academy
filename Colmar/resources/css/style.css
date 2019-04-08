@@ -1,0 +1,444 @@
+/* General Styling  */
+html{
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.leftAlign {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.leftAlign img {
+  width: 100%;
+}
+
+.leftAlign video {
+  width: 100%;
+}
+
+.rightAlign {
+  width: 40%;
+}
+
+p, span {
+  color: gray;
+  font-weight: lighter;
+}
+
+a {
+  text-decoration: none;
+  color: dodgerblue;
+}
+.mobileOnly {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+
+  .leftAlign {
+    width: 100%;
+  }
+
+  .rightAlign {
+    width:100%;
+  }
+
+.mobileOnly {
+    display: flex;
+    justify-content: space-between;
+    max-width: 85%
+  }
+
+  .desktopOnly {
+    display: none;
+  }
+}
+
+/* Header */
+
+header .desktopNav {
+  height:4rem;
+  padding: 0px 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 2rem;
+}
+
+.logo span {
+  font-size: 2rem;
+  color: black;
+}
+
+.logo span:first-of-type {
+  font-weight: bold;
+}
+
+nav span:nth-child(1n+2) {
+  margin-left: 1rem;
+}
+nav span {
+  color: black;
+}
+/* Banner */
+
+.banner {
+  background-color: silver;
+}
+
+.banner .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bannerText h1 {
+  font-size: 2.75rem;
+  margin-bottom: 2.5rem;
+  font-weight: 800;
+}
+
+.bannerText p {
+  font-size: 1.55rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  color: black;
+}
+
+.bannerText span {
+  text-align: center;
+}
+
+.startButton {
+  background-color: #303030;
+  color: white;
+  padding: .5rem 5rem;
+  font-size: 1.75rem;
+  width: 40%;
+  margin: 1.5rem auto;
+}
+
+.startButton:hover {
+  background-color: white;
+  color: #303030;
+}
+
+@media only screen and (max-width: 480px) {
+  .banner {
+    height: 650px;
+  }
+
+  .banner .container {
+    flex-direction: column;
+  }
+
+  .bannerImage {
+    padding-top: 0rem;
+  }
+
+  .bannerText {
+    padding-left: 1rem;
+  }
+
+  .bannerText h1 {
+    margin-bottom: 2rem;
+  }
+
+  .bannerText p {
+    margin-bottom: 2rem;
+  }
+
+  .bannerText .startButton {
+    text-align: center;
+  }
+  .startButton {
+    text-align: center;
+    width: 85%;
+    padding: .5rem 1rem .5rem 1rem;
+    font-size: 2rem;
+    margin: 1.5rem auto;
+
+  }
+}
+/* Articles */
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+.main h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+}
+
+.main p {
+  margin-bottom: 1.5rem;
+}
+
+/* Main Article Row */
+
+aside img {
+  width: 35%;
+  height: auto;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  border-left: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  padding: 1rem 1rem;
+  height: 9rem;
+}
+.featureText {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.featureText h3 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.featureText span {
+  margin-bottom: 0.5rem;
+}
+
+.features img {
+  margin-right: 1rem;
+}
+
+.features:last-of-type {
+  background-color: lightgray;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .featureText {
+    width: 100%;
+    margin-left: 1rem;
+  }
+
+  .features {
+    flex-direction: column;
+    height: 22rem;
+    margin: 1rem 1rem 4rem 1rem;
+    border: none;
+  }
+
+  .features img {
+    width: 100%;
+    height: 16rem;
+  }
+
+  .features:last-of-type {
+    background-color: white;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid lightgray;
+  }
+
+}
+
+/* Start Learning */
+
+.learning {
+  background-color: lightgray;
+}
+
+.learning .container h2 {
+  padding-bottom: 2rem;
+  padding-top:  2rem;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.learnRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.learnBox {
+  width: 27%;
+  margin: 2rem 2rem;
+  background-color: white;
+  height: 20rem;
+}
+
+.learnBox img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.learnBoxText {
+  margin: 1rem 1rem 1.5rem 1rem;
+}
+
+.learnBoxText h3 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+
+}
+
+.learnBoxText span {
+  font-size: 1.25rem;
+  color: gray;
+  font-weight: lighter;
+}
+
+.learnBoxText p {
+  margin-top: 8px;
+  font-size: 1.2rem;
+  margin-bottom: 0rem;
+  line-height: 1.35;
+  color: gray;
+  font-weight: lighter;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .learning {
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+
+  }
+
+  .mobileLearnRow {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .mobileLearnRow h3 {
+    padding: 1rem 1rem 1.5rem 1rem;
+    background-color: lightgray;
+    font-size: 2rem;
+    margin: .5rem auto;
+    color: dimgray;
+    width: 80%;
+    display: block;
+  }
+}
+
+/* Thesis Exhibit */
+
+.thesis {
+  display: flex;
+  justify-content: space-between;
+}
+.thesisTitle {
+  padding-bottom: 2rem;
+  padding-top:  2rem;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.thesis .leftAlign {
+  padding-top: 0;
+}
+.thesis h3 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+}
+
+.thesis p {
+  margin-bottom: 1.5rem;
+  color: gray;
+  font-weight: lighter;
+}
+
+.thesis video {
+  width: 100%;
+}
+
+.exhibits {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  height: 9rem;
+}
+.exhibitsText {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.exhibitsText h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.exhibitsText span {
+  margin-bottom: 0.5rem;
+  color: gray;
+  font-weight: lighter;
+}
+
+.exhibits img {
+  margin-right: 1rem;
+}
+
+.exhibits:first-of-type {
+  background-color: lightgray;
+}
+
+@media only screen and (max-width: 480px) {
+  .thesis {
+    margin: 1rem 0 1rem 0;
+    max-width: 100%
+  }
+}
+
+/* Footer */
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  color: gray;
+}
+
+.bottomNav{
+  display: flex;
+  justify-content:space-between;
+}
+
+.bottomNav span:first-of-type {
+  margin-right: 16px;
+}
+
+@media only screen and (max-width: 480px) {
+
+}
